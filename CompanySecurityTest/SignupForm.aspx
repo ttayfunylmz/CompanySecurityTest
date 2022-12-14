@@ -5,13 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <style type="text/css">
-        
+    <style>
+        .signup_form{
+            margin:auto;
+            width:33%;
+            background-color:aquamarine;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="signup_form">
             <table>
                 <tr>
                     <td>
@@ -116,10 +120,11 @@
                         &nbsp;</td>
                 </tr>
             </table>
+            <asp:Label ID="lblMessage" runat="server" Text="Message"></asp:Label>
         </div>
         
 
-        <asp:Label ID="lblMessage" runat="server" Text="Message"></asp:Label>
+        
         
 
     </form>
