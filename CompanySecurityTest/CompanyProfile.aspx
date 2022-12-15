@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="CompanyProfile.aspx.cs" Inherits="CompanySecurityTest.CompanyProfile" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+<asp:Content ID="Content" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceholder" runat="server">
+<asp:Content ID="MainContenPlaceholder" ContentPlaceHolderID="MainContentPlaceholder" runat="server">
 
     <div class="container-fluid">
         <div class="row">
@@ -23,7 +24,7 @@
                                 <center>
                                     <h4>Your Company Profile</h4>
                                     <span>Account Status - </span>
-                                    <asp:Label class="badge badge-pill badge-success" ID="Label1" runat="server" Text="Active"></asp:Label>
+                                    <asp:Label class="badge badge-pill badge-success" ID="lblActive" runat="server" Text="Active"></asp:Label>
                                 </center>
                             </div>
                         </div>
@@ -38,31 +39,30 @@
                             <div class="col-md-6">
                                 <label>Company Name</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Enter Company Name"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtCompanyName" runat="server" placeholder="Enter Company Name"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <label>Company Area</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Enter Company Area"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtCompanyArea" runat="server" placeholder="Enter Company Area"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
-
 
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Company City</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Enter Company City"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtCompanyCity" runat="server" placeholder="Enter Company City"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <label>Company District</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Enter Company District"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtCompanyDistrict" runat="server" placeholder="Enter Company District"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                             <div class="col-md-6">
                                 <label>Company Country</label>
                                 <div class="form-group">
-                                    <asp:DropDownList ID="DropDownList1" class="form-control" runat="server">
+                                    <asp:DropDownList ID="ddlCountry" class="form-control" runat="server">
                                         <asp:ListItem Text="Selected Country" Value="select" />
                                         <asp:ListItem Text="Turkey" Value="Turkey" />
                                         <asp:ListItem Text="Argentina" Value="Argentina" />
@@ -100,7 +100,7 @@
                             <div class="col-md-6">
                                 <label>Contact</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox6" runat="server" placeholder="Enter Contact" TextMode="Phone"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtContact" runat="server" placeholder="Enter Contact" TextMode="Phone"></asp:TextBox>
                                 </div>
                             </div>
 
@@ -111,16 +111,16 @@
                             <div class="col">
                                 <label>Description</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Enter Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtDescription" runat="server" placeholder="Enter Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <center>
-                            <div class="col">
-                                <span class="badge badge-pill badge-dark">REQUIRED!!</span>
-                            </div>
+                                <div class="col">
+                                    <span class="badge badge-pill badge-dark">REQUIRED!!</span>
+                                </div>
                             </center>
                         </div>
 
@@ -128,21 +128,21 @@
                             <div class="col-md-4">
                                 <label>E-Mail</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox8" runat="server" placeholder="Cannot be changed" TextMode="Email" ReadOnly="True"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" placeholder="Cannot be changed" TextMode="Email" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <label>Current Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox9" runat="server" placeholder="Cannot be changed" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Cannot be changed" TextMode="Password" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <label>New Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox7" runat="server" placeholder="Enter New Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtNewPassword" runat="server" placeholder="Enter New Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -151,9 +151,9 @@
                         <div class="row">
                             <div class="col-8 mx-auto">
                                 <center>
-                                <div class="form-group">
-                                    <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update Informations" />
-                                </div>
+                                    <div class="form-group">
+                                        <asp:Button class="btn btn-primary btn-block btn-lg" ID="btnUpdate" runat="server" Text="Update Informations" />
+                                    </div>
                                 </center>
                             </div>
                         </div>
@@ -183,8 +183,8 @@
                             <div class="col">
                                 <center>
                                     <h4>Mitre Attacks you've already tried</h4>
-                                   
-                                    <asp:Label class="badge badge-pill badge-success" ID="Label2" runat="server" Text="Mitre Attacks"></asp:Label>
+
+                                    <asp:Label class="badge badge-pill badge-success" ID="lblMitreAttacks" runat="server" Text="Mitre Attacks"></asp:Label>
                                 </center>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
 
                         <div class="row">
                             <div class="col">
-                                <asp:GridView class="table table-dark table-striped" ID="GridView1" runat="server"></asp:GridView>
+                                <asp:GridView class="table table-dark table-striped" ID="IdProfile" runat="server"></asp:GridView>
                             </div>
                         </div>
                     </div>

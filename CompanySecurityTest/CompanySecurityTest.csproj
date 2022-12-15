@@ -2132,16 +2132,12 @@
     <Content Include="Fontawesome\svgs\solid\yin-yang.svg" />
     <Content Include="Fontawesome\svgs\solid\z.svg" />
     <Content Include="Home.aspx" />
-    <Content Include="Home.html" />
     <Content Include="Images\ATT&amp;CK_red.png" />
     <Content Include="Images\company.jpg" />
     <Content Include="Images\company2.jpg" />
     <Content Include="Images\generaluser.png" />
     <Content Include="Images\mitre-attack.jpg" />
     <Content Include="Images\tycyber.png" />
-    <Content Include="LoginForm.aspx" />
-    <Content Include="ProfilePage.aspx" />
-    <Content Include="SignupForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2173,28 +2169,7 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.aspx.cs">
-      <DependentUpon>LoginForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginForm.aspx.designer.cs">
-      <DependentUpon>LoginForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProfilePage.aspx.cs">
-      <DependentUpon>ProfilePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProfilePage.aspx.designer.cs">
-      <DependentUpon>ProfilePage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignupForm.aspx.cs">
-      <DependentUpon>SignupForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SignupForm.aspx.designer.cs">
-      <DependentUpon>SignupForm.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

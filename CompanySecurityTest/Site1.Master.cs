@@ -13,5 +13,10 @@ namespace CompanySecurityTest
         {
 
         }
+
+        protected void btnProfilesButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
