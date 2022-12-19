@@ -3,7 +3,7 @@
 <asp:Content ID="Content" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="MainContentPlaceholder" ContentPlaceHolderID="MainContentPlaceholder" runat="server">
-
+    <%--we didnot use required field validator because it didnt work and we used required="true" --%>
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
@@ -37,14 +37,14 @@
                             <div class="col-md-6">
                                 <label>Company Name</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtCompanyName" runat="server" placeholder="Enter Company Name"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtCompanyName" runat="server" placeholder="Enter Company Name"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <label>Company Area</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtCompanyArea" runat="server" placeholder="Enter Company Area"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtCompanyArea" runat="server" placeholder="Enter Company Area"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -54,14 +54,14 @@
                             <div class="col-md-6">
                                 <label>Company City</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtCompanyCity" runat="server" placeholder="Enter Company City"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtCompanyCity" runat="server" placeholder="Enter Company City"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <label>Company District</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtCompanyDistrict" runat="server" placeholder="Enter Company District"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtCompanyDistrict" runat="server" placeholder="Enter Company District"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Company Country</label>
-                                <div class="form-group">
+                                <div required="true" class="form-group">
                                     <asp:DropDownList ID="ddlCountry" class="form-control" runat="server">
                                         <asp:ListItem Text="Selected Country" Value="select" />
                                         <asp:ListItem Text="Turkey" Value="Turkey" />
@@ -99,7 +99,7 @@
                             <div class="col-md-6">
                                 <label>Contact</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtContact" runat="server" placeholder="Enter Contact" TextMode="Phone"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtContact" runat="server" placeholder="Enter Contact" TextMode="Phone"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                             <div class="col">
                                 <label>Description</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtDescription" runat="server" placeholder="Enter Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtDescription" runat="server" placeholder="Enter Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -124,14 +124,14 @@
                             <div class="col-md-6">
                                 <label>E-Mail</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" placeholder="Enter E-Mail" TextMode="Email"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtEmail" runat="server" placeholder="Enter E-Mail" TextMode="Email"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtPassword" runat="server" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>

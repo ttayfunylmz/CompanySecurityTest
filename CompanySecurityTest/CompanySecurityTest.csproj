@@ -77,6 +77,7 @@
     <Content Include="CSS\CustomStyleSheet.css" />
     <Content Include="Datatables\Css\jquery.dataTables.min.css" />
     <Content Include="Datatables\Js\jquery.dataTables.min.js" />
+    <Content Include="DesignerInfo.aspx" />
     <Content Include="Fontawesome\css\all.css" />
     <Content Include="Fontawesome\css\all.min.css" />
     <Content Include="Fontawesome\css\brands.css" />
@@ -2135,9 +2136,15 @@
     <Content Include="Images\ATT&amp;CK_red.png" />
     <Content Include="Images\company.jpg" />
     <Content Include="Images\company2.jpg" />
+    <Content Include="Images\CreateAccountLocalAccount.png" />
     <Content Include="Images\generaluser.png" />
     <Content Include="Images\mitre-attack.jpg" />
+    <Content Include="Images\NetworkServiceDiscovery.png" />
+    <Content Include="Images\Tayfun.png" />
     <Content Include="Images\tycyber.png" />
+    <Content Include="Images\Yasin.png" />
+    <Content Include="MitreAttack.aspx" />
+    <Content Include="MitreAttackInfo.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2162,12 +2169,33 @@
     <Compile Include="CompanySignup.aspx.designer.cs">
       <DependentUpon>CompanySignup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DesignerInfo.aspx.cs">
+      <DependentUpon>DesignerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignerInfo.aspx.designer.cs">
+      <DependentUpon>DesignerInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MitreAttack.aspx.cs">
+      <DependentUpon>MitreAttack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MitreAttack.aspx.designer.cs">
+      <DependentUpon>MitreAttack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MitreAttackInfo.aspx.cs">
+      <DependentUpon>MitreAttackInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MitreAttackInfo.aspx.designer.cs">
+      <DependentUpon>MitreAttackInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">

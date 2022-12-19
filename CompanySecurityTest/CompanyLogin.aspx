@@ -37,12 +37,12 @@
                             <div class="col">
                                 <label>E-Mail Address</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" placeholder="Enter your E-Mail"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtEmail" runat="server" placeholder="Enter your E-Mail"></asp:TextBox>
                                 </div>
 
                                 <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Enter your Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox required="true" CssClass="form-control" ID="txtPassword" runat="server" placeholder="Enter your Password" TextMode="Password"></asp:TextBox>
                                 </div>
 
                                 <div class="form-group">

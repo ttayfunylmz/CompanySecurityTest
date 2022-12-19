@@ -40,14 +40,35 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="Home.aspx">Home</a>
                         </li>
+                        
                         <li class="nav-item active">
-                            <a class="nav-link" href="CompanyLogin.aspx">Log In</a>
+                            <a class="nav-link" href="DesignerInfo.aspx">Designer Info</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="CompanySignup.aspx">Sign Up</a>
+                            <a class="nav-link" href="MitreAttackInfo.aspx">Mitre Attack Info</a>
+                        </li>
+                    </ul>
+
+                     <ul class="navbar-nav">
+                         <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnCompanyProfile" runat="server" OnClick="btnCompanyProfile_Click" Visible="False">Profile</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="CompanyProfile.aspx">Profile</a>
+                            <asp:LinkButton class="nav-link" ID="btnMitreAttackTest" runat="server" OnClick="btnMitreAttackTest_Click" Visible="False">Mitre Attack Test</asp:LinkButton>
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnLogin" runat="server" OnClick="btnLogin_Click">Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnSignup" runat="server" OnClick="btnSignup_Click">Sign Up</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnWelcome" runat="server" OnClick="btnWelcome_Click" Visible="False">Welcome Company</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="btnLogout" runat="server" OnClick="btnLogout_Click" Visible="False">Logout</asp:LinkButton>
                         </li>
                     </ul>
                 </div>

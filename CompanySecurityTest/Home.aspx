@@ -9,8 +9,8 @@
         <header>
             <img src="Images/mitre-attack.jpg" height="350" width="650">
             <br>
-            <h2 style="color: cornflowerblue">Company Security Test</h2>
-            <strong style="color: coral">Your best Mitre Attack Tester!</strong>
+            <h2 style="color: whitesmoke">Company Security Test</h2>
+            <strong style="color: whitesmoke">Your best Mitre Attack Tester!</strong>
         </header>
     </div>
     <%--<div class="topNav">
@@ -49,7 +49,7 @@
             </div>--%>
         </div>
     </section>
-    <div class="footer" style="background-color:saddlebrown">
+    <div class="footer" style="background-color: #BD4127">
         <a href="https://attack.mitre.org/" target="_blank">Mitre Attack </a>
         <a href="https://github.com/" target="_blank">GitHub </a>
         <a href="https://www.w3schools.com/" target="_blank">W3 Schools </a>
